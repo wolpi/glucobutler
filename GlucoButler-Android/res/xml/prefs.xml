@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceScreen
+	    android:key="pref_factors"
+	    android:title="@string/factors"
+	    android:summary="@string/pref_summary_factor">
+    	<intent
+    	    android:action="com.glucobutler.prefs.factor"
+    	    android:targetClass="com.glucobutler.ui.prefs.FactorsPrefActivity" />
+	</PreferenceScreen>
+	<EditTextPreference
+        android:key="pref_correction"
+        android:title="@string/correction"
+        android:summary="@string/pref_summary_correction"
+        android:defaultValue="0"
+        android:inputType="number"
+    />
+    <com.glucobutler.ui.prefs.UnitsListPref
+        android:key="pref_unit"
+        android:title="@string/unit"
+        android:summary="@string/pref_summary_unit"
+    />
+</PreferenceScreen>

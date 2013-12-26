@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/pref_factor_hint"
+	    android:padding="20dp" />
+
+    <ImageView 
+        android:src="@drawable/factor_pref_border"
+        android:layout_width="match_parent" 
+        android:layout_height="1dp"
+        android:contentDescription="@string/pref_factor_hint_border_alt" />
+
+    <ScrollView
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:id="@+id/factorsPrefsContainer">
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

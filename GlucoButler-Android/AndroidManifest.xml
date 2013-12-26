@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glucobutler"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- use app_name as label for main activity as that is used as app name -->
+        <activity
+            android:name="com.glucobutler.ui.EditEntryActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.glucobutler.gluco-vals" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.glucobutler.gluco-vals" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.glucobutler.ui.ListEntriesActivity"
+            android:label="@string/entries_list">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.glucobutler.gluco-vals" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.glucobutler.gluco-vals" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.glucobutler.ui.prefs.GlucoPrefsActivity"
+            android:label="@string/settings">
+        </activity>
+
+        <activity
+            android:name="com.glucobutler.ui.prefs.FactorsPrefActivity"
+            android:label="@string/factors">
+            <intent-filter>
+                <!-- to be able to launch this activity from prefs screen -->
+                <action android:name="com.glucobutler.prefs.factor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.glucobutler.provider.GlucoValuesContentProvider"
+            android:authorities="com.glucobutler.provider.GlucoValues"
+            android:exported="false" />
+
+	</application>
+
+</manifest>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/dateLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/date" />
+
+	    <EditText
+	        android:id="@+id/dateInput"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:inputType="date"
+	        android:focusable="false" />
+	</LinearLayout>
+
+    <!-- time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/timeLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/time" />
+
+	    <EditText
+	        android:id="@+id/timeInput"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:inputType="time"
+	        android:focusable="false" />
+	</LinearLayout>
+
+    <!-- time of day -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/timeOfDayLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/timeOfDay" />
+
+	    <Spinner
+	        android:id="@+id/timeOfDaySpinner"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right" />
+	</LinearLayout>
+
+    <!-- value -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/valueLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/gluco_value" />
+
+	    <EditText
+	        android:id="@+id/valueInput"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:inputType="number" />
+	</LinearLayout>
+
+    <!-- unit -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/unitLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/unit" />
+
+	    <Spinner
+	        android:id="@+id/unitSpinner"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right" />
+	</LinearLayout>
+
+    <!-- eaten -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/eatenUnitsLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/unitsEaten" />
+
+	    <EditText
+	        android:id="@+id/eatenUnitsInput"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:inputType="number" />
+	</LinearLayout>
+
+    <!-- factor -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/factorLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/factor" />
+
+	    <EditText
+	        android:id="@+id/factorInput"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:inputType="numberDecimal" />
+	</LinearLayout>
+
+    <!-- correction -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/correctionLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/correction" />
+
+	    <EditText
+	        android:id="@+id/correctionInput"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:inputType="number" />
+	</LinearLayout>
+
+    <!-- units casted -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/castedUnitsLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/unitsCasted" />
+
+	    <EditText
+	        android:id="@+id/castedUnitsInput"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:inputType="number" />
+	</LinearLayout>
+
+    <!-- base units -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/baseUnitsLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/baseUnits" />
+
+	    <EditText
+	        android:id="@+id/baseUnitsInput"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:inputType="number" />
+	</LinearLayout>
+
+    <!-- comment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/commentLabel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="left|center_vertical"
+	        android:paddingLeft="5dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/comment" />
+
+	    <EditText
+	        android:id="@+id/commentInput"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:inputType="textMultiLine" />
+	</LinearLayout>
+
+</LinearLayout>

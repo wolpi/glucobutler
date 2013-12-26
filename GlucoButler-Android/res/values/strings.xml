@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gluco Butler</string>
+
+    <string name="edit_entry">Edit entry</string>
+    <string name="entries_list">Entries list</string>
+
+    <string name="settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="_new">New</string>
+
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="timeOfDay">Time of day</string>
+    <string name="gluco_value">Gluco value</string>
+    <string name="unitsEaten">Units eaten</string>
+    <string name="factor">Factor</string>
+    <string name="factors">Factors</string>
+    <string name="correction">Correction</string>
+    <string name="unitsCasted">Units casted</string>
+    <string name="baseUnits">Base Units</string>
+    <string name="comment">Comment</string>
+    <string name="unit">Unit</string>
+
+    <string name="mg_dl">mg/dl</string>
+	<string name="mmo_l">mmo/l</string>
+
+	<string name="morning">Morning</string>
+	<string name="forenoon">Forenoon</string>
+	<string name="noon">Noon</string>
+	<string name="early_afternoon">Early afternoon</string>
+	<string name="late_afternoon">Late afternoon</string>
+	<string name="evening">Evening</string>
+	<string name="late_evening">Late evening</string>
+	<string name="night">Night</string>
+
+	<string name="pref_summary_factor">Default factor for each time of day.</string>
+	<string name="pref_summary_correction">Gluco amount to add correction for. E.g. correction of 30 will add 3 casted units for a gluco value of 190 mg/dl.</string>
+	<string name="pref_summary_unit">Unit of gluco values</string>
+
+	<string name="pref_factor_hint">It is not necessary to set a factor for each time of day. Factors will be taken by next or previous time.</string>
+	<string name="pref_factor_hint_border_alt">Border image.</string>
+	<string name="pref_factor_diag_title">{0} - Factor</string>
+			
+</resources>
